@@ -1,0 +1,26 @@
+Estrutura de dados:
+
+vatore e matrizes: Arrays permite armazenar vários dados de um unico tipo e possuem tamanho fixo 
+
+registroa:permite armaenar mais de um tipo de dados ex: registrando um funcionario, vai conte nomes, números reais, némeros inteiros ..
+
+listas :  armazena dados de um determinado tipo em uma ordem especifica. as listas possuem tamanho ajustável.
+existe dois tipo : lista ligadas e duplamente ligadas.
+ligadas:são listas ligadas por nós e cada nó conhece o valor que est sendo armazenado em sei interior e conhece tbm o proximo elemento que vai ser o nós posterior, só pode ser inserido apos existe um elemento.
+
+    1 nó  -   ultimo nó
+ex: pedro -> luiza ( nas listas ligadas só vai poder se inserido o nó após o que já esta na lista).
+
+duplamente ligadas:são listas ligadas por nós e cada nó conhece o valor que está sendo armazenado em seu interior e conhece tbm o proximo elemento que vai ser o nós posterior, porém ele pode ser inserido posterinamente ou inferimente, podendo ser movido ou inserido.
+
+    1 nó -  2 nó    ultimo nó
+ex: pedro -> ana -> bruno ou 
+   
+    Rafa <- pedro - ana -> bruno ( pode incluir elementos antes ou depois do primeiro e ultimo nó)
+
+pilhas : é uma estrutura de dados que serve como uma coleção de elementos, e permite o acesso a somente um item de dados armazanados, ou seja somente um item pode ser lido ou removido por ve.
+existem dois tipo: ueps e peps
+ueps - ultimo que entra é o primeiro q sai
+peps - o primeiro que entra é o primeiro q sai.
+
+filas: admite remoção de elementos e inserção de novos sujeita a seguinte regra de operação: o elemento removido é o que está na estrutura há mais tempo ou seja, o primeiro objeto inserido na fila é também o primeiro a ser removido igual a logicado do peps.
