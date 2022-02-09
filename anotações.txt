@@ -1,0 +1,180 @@
+AULA 6
+
+tipos Primitivos:
+ inteiro - int - 7, -4 , 0 p
+ reais decimais - float = 4,5, 0.076,-15.223,7.0
+ verdeiro\falso - bool= True\False
+ caracte - str = "olá", '7,5', ''
+
+#formato de Print
+ print('A soma entre {} e {} vale {}'.format(n1,n2,s))
+ print(n.isnumeric()) - informa se é possivel converter esse valor em um numero com o tipo primitivo antes dele
+ print(n.isalpha()) - indentifica se ele é letra
+ print(n.isalnum()) - indetifica se letra e numero
+ print(n.isupper()) - indentifica se só tem letra maiuscula
+
+AULA 7
+
+ordem de precedência
+
+1 = resolve o que tiver dentro dos parenteses()
+2 = resolve aspotenciações **
+3 = resolve quem aparecer primeiro, as multiplicações, divições, divição inteira e resto da divisão ex *, /, //, %
+4 = resolve as somas e subtraçoes binarias +, -
+Rai quadrada ex 8**(1/2)
+
+no final da linda pode utilizar end= '' para colocar tudo na mesma linha
+já paara quebrar uma linda basta utilizar \n aonde deseja.
+
+AULA 8
+
+TRABALHANDO COM MODULOS : como utilizar módulos em Python utilizando os comandos import e from/import no Python.
+
+Comandos : import 
+ex: import bebida - utilizando o import na frente vai servir para importa todas as funcionalidade do modulo 
+from doce import - utilizando o import depois do from e da funionalidade especifica vai servir para importar apenas as funcionalidades que eu escolher
+
+biblioteca: math: significa matématica
+Funções
+ceil: arredondamento pra cima;
+floor: arredondamento pra baixo
+trunc: vai elimina da virgula pra frente sem arredondar mostrando a porção inteira
+pow: pontencia
+sqrt: calcula raiz quadrada
+factorial: calcula fatorial
+hypot : calcula a hipotenusa
+
+ex: para importa a biblioteba basta escrever:
+- import match 
+para importar apenas a funcionalidade basta escrever:
+- from math import sqrt
+
+biblioteca random
+quando for utilisar uma lista colocar as informações dentro de -> []
+-random.choice = uma escolha dentro da lista
+-random.shuffle = para embalhar uma lista
+-randint =  procurar o numero inteiro
+biblioteca pygame
+
+Aula 9
+
+Manipulando Texto
+operações com String 
+
+Fatiamento de string
+ex: - frase[5:21:2] =  começa na posição 5 vai até a 21 pulando de dois em dois
+    - frase[:5]= como não iniciou de onde deve começar esse ex vai puxa do 0 até o numero 5
+    - frase[15:]= vai indicar aonde começa, porem não sabemos o final, nesse caso o python vai fatiar a palavra inteira,
+    - frase[9::3]= começa na posição 9 vai até a 21, porém ele vai escrever o 9 e vai pulando de três em três e vai ignorar os outros,
+obs: sempre vai ser ignorado ultimo numero caso vc queira a palavra completa sempre acrescentar um numero a mais.
+
+Analisa: 
+string: FRASE = |Curso |em |Pyton
+| = significa espaço entre as palavras (não utilizar no formação da string é um modo de anatação.)
+*len = vai ler a quantidade de letras que tem na string considerando os espaços.
+ex: len(frase)
+resposta = 14 com os espaços.
+
+*count = contar a quantidade de caractes
+ex: frase.count('o')
+resposta = 2
+frase.count('o', 0, 13) - vai fazer umma contagem com fatiamento.. nesse caso vai mostrar entre os caractes  0 a 13 quantas vogais 'o' tem;
+resposta = 0
+
+*find =  encontar para dizer a posição
+ex: frase.find('deo') -  vai mostra o numero aonde começou a palavra 'deo'dentro da string 
+resposta = 3
+
+frase.find('Android') - quando não existir a string ele vai mostrar 
+resposta = (-1)
+
+'curso'in frase - se esxite a palavra curso dentro da string criada a funcionalidade in vai mostra se exite ou não com a palavra trun ou false
+Resposta = trun
+
+transformação
+*replace -  reposicionar (subistituir)
+ex: frase.replace('Python','Android') - ele vai verificar se existe a palavra python e subistituir por android mais não na string e sim de uma forma secundaria
+resposta = Curso em Android
+
+*upper - signica pra cima vai deixar tu maiusculo
+frase.upper() - o que ja tiver maiusculo vai permancer e vai colocar as palavras minuscula em maiusculo
+Resposta = CURSO EM PYTON
+
+*lower - vai deixar tudo minusculo
+frase.lower() -  o que ja tiver minusculo vai permancer e vai subistituir as palavras maiuscula em minusculas
+Resposta = 'curso em pyton'
+
+*capitalize - vai pegar toda a string e vai transformar emm minusculas e só deixar a primeira letra maiuscula
+ex: frase.capitalize() - 
+Resposta = 'Curso em python'
+
+*title - vai fazer uma anlise mais profunda vai analisar quantas palavras tem atraves dos espaços dentro da string e vai transformar as primeiras letras de cada palavra em maiuscula
+frase.title()
+Resposta =  Curso Em Pyton 
+
+*strip - vai excluir os espaços inuteis no começo e no final da string, o espaço do meio vai manter
+frase.strip()
+Resposta = |||aprenda |python|| = aprenda python
+
+rstrip - r - significa pela direita
+frase.rstrip() - vai excluir só os espaços inuteis da direita e permanecer os restante da string, o espaço do meio vai manter
+Resposta = |||aprenda |python|| = |||aprenda |python
+
+lstrip - l - significa esquerda
+frase.lstrip() - vai excluir só os espaços inuteis da esquerda e permanecer os restante da string, o espaço do meio vai manter
+Resposta = |||aprenda |python|| = aprenda |python||
+
+divisão
+frase = Curso em Video Python
+
+split() - vai haver uma dividisão na string considerando os espaços, aonde tiver espaço
+ele vai dividir uma string em uma lista onde cada elemento vai ser separdo pelo seu caractes de string
+Resposta = [|'Curso'||'em'||'Video'||'Python'|]
+               0       1       2        3
+Junção
+join - juntar uma coisa na outra
+'-'.join(frase) - vai juntar todos os elementos de frase e vai usar o separador '-' mostrando uma string unica 
+Resposta Curso-em-V i d e o - P y t h o n
+    01234567891011121314151617181920
+
+Aula 10
+ estruturas condicionais simples e compostas
+
+condição
+ 
+if carro.esquerda(): = se
+	bloco True
+else:                = senão
+	blocoFalse
+quando se usa so o if a condição é simples
+quando usa o else a condição é composta  
+
+simbolos - 
+== significa igual
+!= significa diferente
+
+
+Aula 11
+Ansi
+escape sequence 
+para usar cores no python como utilizando /033[style; text; backm
+codigo de cor:                           / 033[0    ;  33 ;  44m
+
+
+codigo de style são: 0, 1, 4 e 7 exite outros porém esses funciona melhor no python
+0 = não tem estilo
+1 = bold (negrito)
+4 = underline ( sublilhindo)
+7 = negative ( inverter as situações, o q colocou pra fundo vai pra letra e o que coloco pra letra vai pra fundo)
+
+cor de texo : vai do 30 ao 37
+30= branco
+31 = vermelho
+32 =verde
+33= amarelo
+34 = azul
+35= roxo
+36= azul bebe
+37= cinza
+
+cores de fundo: vai do 40 ao 47 são as mesmas cores do de texto
